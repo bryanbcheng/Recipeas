@@ -1,0 +1,92 @@
+{
+    "name": "Tomato and Eggs",
+    "description": "A savory and simple dish",
+    "prepTime": 15,
+    "servingSize": 2,
+    "ingredients": [
+                    {
+                    "item": "tomato",
+                    "quantity": 2
+                    },
+                    {
+                    "item": "egg",
+                    "quantity": 4
+                    },
+                    {
+                    "item": "salt"
+                    },
+                    {
+                    "item": "sugar"
+                    },
+                    {
+                    "item": "vegetable oil"
+                    }
+                    ],
+    "instructions": [
+                     {
+                     "ingredients": [
+                                     "tomato"
+                                     ],
+                     "string": "Dice tomatoes"
+                     },
+                     {
+                     "ingredients": [
+                                     "egg",
+                                     "salt"
+                                     ],
+                     "string": "Beat eggs and add salt"
+                     },
+                     {
+                     "ingredients": [
+                                     "vegetable oil"
+                                     ],
+                     "string": "Heat 1 tablespoon oil in frypan"
+                     },
+                     {
+                     "ingredients": [
+                                     "egg"
+                                     ],
+                     "string": "Add eggs and cook until scrambled"
+                     },
+                     {
+                     "ingredients": [
+                                     "egg"
+                                     ],
+                     "string": "Remove eggs from frypan"
+                     },
+                     {
+                     "ingredients": [
+                                     "vegetable oil"
+                                     ],
+                     "string": "Heat 1 tablespoon oil in frypan"
+                     },
+                     {
+                     "ingredients": [
+                                     "tomato"
+                                     ],
+                     "string": "Add tomatoes and cook until juices flowing"
+                     },
+                     {
+                     "ingredients": [
+                                     "sugar"
+                                     ],
+                     "string": "Add 1 tablespoon sugar"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Stir for 30 seconds"
+                     },
+                     {
+                     "ingredients": [
+                                     "egg"
+                                     ],
+                     "string": "Add eggs back in"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Stir until done"
+                     }
+                     ]
+}

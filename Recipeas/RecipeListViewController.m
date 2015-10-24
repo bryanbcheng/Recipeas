@@ -1,20 +1,20 @@
 //
-//  MasterViewController.m
+//  RecipeListViewController.m
 //  Recipeas
 //
 //  Created by Bryan Cheng on 3/21/15.
 //  Copyright (c) 2015 Bryan Cheng. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "RecipeListViewController.h"
+#import "Recipe.h"
 
-@interface MasterViewController ()
+@interface RecipeListViewController ()
 
 @property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+@implementation RecipeListViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -22,14 +22,22 @@
     self.preferredContentSize = CGSizeMake(320.0, 600.0);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    if (!self.objects) {
+        self.objects = [[NSMutableArray alloc] init];
+    }
+    [self.objects addObject:@"Tomato and Eggs"];
+    [self.objects addObject:@"Chicken Pasta"];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,26 +45,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
+        RecipeStartViewController *controller = (RecipeStartViewController *)[[segue destinationViewController] topViewController];
+        [controller setRecipe:[self getRecipeFromJson:((UITableViewCell *)sender).textLabel.text]];
     }
+}
+
+- (Recipe *)getRecipeFromJson:(NSString *)recipeName {
+    NSString *filePath;
+    if ([recipeName isEqualToString:@"Tomato and Eggs"]) {
+        filePath = [[NSBundle mainBundle] pathForResource:@"tomatoandegg" ofType:@"json"];
+    } else {
+        filePath = [[NSBundle mainBundle] pathForResource:@"chickenpasta" ofType:@"json"];
+    }
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    Recipe *recipe = [Recipe recipeFromJson:json];
+    
+    return recipe;
 }
 
 #pragma mark - Table View
@@ -71,17 +80,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    
+    //NSDate *object = self.objects[indexPath.row];
+    //cell.textLabel.text = [object description];
+    NSString *recipeName = self.objects[indexPath.row];
+    cell.textLabel.text = recipeName;
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
-
+/*
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.objects removeObjectAtIndex:indexPath.row];
@@ -90,5 +101,5 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
-
+*/
 @end

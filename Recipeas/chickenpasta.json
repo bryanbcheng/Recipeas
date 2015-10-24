@@ -1,0 +1,117 @@
+{
+    "name": "Chicken Pasta",
+    "description": "A delicious, easy company dish - the flavors are wonderful. A favorite with families.",
+    "prepTime": 60,
+    "servingSize": 6,
+    "ingredients": [
+                    {
+                    "item": "boneless chicken breast",
+                    "quantity": "6"
+                    },
+                    {
+                    "item": "angel hair pasta",
+                    "quantity": "1 pound"
+                    },
+                    {
+                    "item": "golden mushroom soup",
+                    "quantity": "1 can"
+                    },
+                    {
+                    "item": "butter",
+                    "quantity": "1/4 cup"
+                    },
+                    {
+                    "item": "salad dressing mix",
+                    "quantity": "1 package"
+                    },
+                    {
+                    "item": "white wine",
+                    "quantity": "1/2 cup"
+                    },
+                    {
+                    "item": "cream cheese",
+                    "quantity": "4 ounces"
+                    }
+                    ],
+    "instructions": [
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Preheat oven to 325 degrees F"
+                     },
+                     {
+                     "ingredients": [
+                                     "butter"
+                                     ],
+                     "string": "Melt butter over low heat in large saucepan"
+                     },
+                     {
+                     "ingredients": [
+                                     "salad dressing mix"
+                                     ],
+                     "string": "Stir in the package of dressing mix"
+                     },
+                     {
+                     "ingredients": [
+                                     "wine",
+                                     "golden mushroom soup"
+                                     ],
+                     "string": "Blend in wine and golden mushroom soup"
+                     },
+                     {
+                     "ingredients": [
+                                     "cream cheese"
+                                     ],
+                     "string": "Mix in cream cheese"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Stir until smooth"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Heat through, but do not boil"
+                     },
+                     {
+                     "ingredients": [
+                                     "boneless chicken breast"
+                                     ],
+                     "string": "Arrange chicken breasts in a single layer in a 9x13 inch baking dish"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Pour sauce over"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Bake for 60 minutes in the preheated oven"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Boil large pot of lightly salted water"
+                     },
+                     {
+                     "ingredients": [
+                                     "angel hair pasta"
+                                     ],
+                     "string": "Cook pasta until al dente"
+                     },
+                     {
+                     "ingredients": [
+                     ],
+                     "string": "Drain water"
+                     },
+                     {
+                     "ingredients": [
+                                     "boneless chicken breast",
+                                     "angel hair pasta"
+                                     ],
+                     "string": "Serve chicken and sauce over pasta"
+                     }
+                     ]
+}

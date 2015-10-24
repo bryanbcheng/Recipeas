@@ -9,12 +9,25 @@
 /* Begin PBXBuildFile section */
 		BB1018B21ABE36150069883C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018B11ABE36150069883C /* main.m */; };
 		BB1018B51ABE36150069883C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018B41ABE36150069883C /* AppDelegate.m */; };
-		BB1018B81ABE36150069883C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018B71ABE36150069883C /* MasterViewController.m */; };
-		BB1018BB1ABE36150069883C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018BA1ABE36150069883C /* DetailViewController.m */; };
+		BB1018B81ABE36150069883C /* RecipeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018B71ABE36150069883C /* RecipeListViewController.m */; };
+		BB1018BB1ABE36150069883C /* RecipeStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018BA1ABE36150069883C /* RecipeStartViewController.m */; };
 		BB1018BE1ABE36150069883C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1018BC1ABE36150069883C /* Main.storyboard */; };
 		BB1018C01ABE36150069883C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1018BF1ABE36150069883C /* Images.xcassets */; };
 		BB1018C31ABE36150069883C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1018C11ABE36150069883C /* LaunchScreen.xib */; };
 		BB1018CF1ABE36160069883C /* RecipeasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018CE1ABE36160069883C /* RecipeasTests.m */; };
+		BB1018DA1ABE36F10069883C /* tomatoandegg.json in Resources */ = {isa = PBXBuildFile; fileRef = BB1018D91ABE36F10069883C /* tomatoandegg.json */; };
+		BB1018DF1ABE37550069883C /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018DE1ABE37550069883C /* Recipe.m */; };
+		BB1018E21ABE377E0069883C /* RecipeInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018E11ABE377E0069883C /* RecipeInstructionViewController.m */; };
+		BB1018E51ABE84A00069883C /* RecipeInstructionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018E41ABE84A00069883C /* RecipeInstructionListViewController.m */; };
+		BB1018E81ABFC98D0069883C /* RecipeInstructionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1018E71ABFC98D0069883C /* RecipeInstructionView.m */; };
+		BB1018EE1AC12D6C0069883C /* egg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018EC1AC12D6C0069883C /* egg.jpeg */; };
+		BB1018EF1AC12D6C0069883C /* tomato.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018ED1AC12D6C0069883C /* tomato.jpeg */; };
+		BB1018F11AC1330B0069883C /* pepper.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018F01AC1330B0069883C /* pepper.jpeg */; };
+		BB1018F71AC133150069883C /* vegetable oil.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018F41AC133150069883C /* vegetable oil.jpeg */; };
+		BB1018FA1AC1337F0069883C /* salt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018F81AC1337F0069883C /* salt.jpeg */; };
+		BB1018FB1AC1337F0069883C /* sugar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018F91AC1337F0069883C /* sugar.jpeg */; };
+		BB1018FD1AC3D7090069883C /* wood-textures.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB1018FC1AC3D7090069883C /* wood-textures.jpg */; };
+		BB1018FF1AC3E48C0069883C /* chickenpasta.json in Resources */ = {isa = PBXBuildFile; fileRef = BB1018FE1AC3E48C0069883C /* chickenpasta.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +46,33 @@
 		BB1018B11ABE36150069883C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB1018B31ABE36150069883C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB1018B41ABE36150069883C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB1018B61ABE36150069883C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		BB1018B71ABE36150069883C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		BB1018B91ABE36150069883C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		BB1018BA1ABE36150069883C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BB1018B61ABE36150069883C /* RecipeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeListViewController.h; sourceTree = "<group>"; };
+		BB1018B71ABE36150069883C /* RecipeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeListViewController.m; sourceTree = "<group>"; };
+		BB1018B91ABE36150069883C /* RecipeStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeStartViewController.h; sourceTree = "<group>"; };
+		BB1018BA1ABE36150069883C /* RecipeStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeStartViewController.m; sourceTree = "<group>"; };
 		BB1018BD1ABE36150069883C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB1018BF1ABE36150069883C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB1018C21ABE36150069883C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BB1018C81ABE36150069883C /* RecipeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1018CD1ABE36160069883C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1018CE1ABE36160069883C /* RecipeasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeasTests.m; sourceTree = "<group>"; };
+		BB1018D91ABE36F10069883C /* tomatoandegg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tomatoandegg.json; sourceTree = "<group>"; };
+		BB1018DD1ABE37550069883C /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		BB1018DE1ABE37550069883C /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		BB1018E01ABE377E0069883C /* RecipeInstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeInstructionViewController.h; sourceTree = "<group>"; };
+		BB1018E11ABE377E0069883C /* RecipeInstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeInstructionViewController.m; sourceTree = "<group>"; };
+		BB1018E31ABE84A00069883C /* RecipeInstructionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeInstructionListViewController.h; sourceTree = "<group>"; };
+		BB1018E41ABE84A00069883C /* RecipeInstructionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeInstructionListViewController.m; sourceTree = "<group>"; };
+		BB1018E61ABFC98C0069883C /* RecipeInstructionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeInstructionView.h; sourceTree = "<group>"; };
+		BB1018E71ABFC98D0069883C /* RecipeInstructionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeInstructionView.m; sourceTree = "<group>"; };
+		BB1018EC1AC12D6C0069883C /* egg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = egg.jpeg; path = images/egg.jpeg; sourceTree = "<group>"; };
+		BB1018ED1AC12D6C0069883C /* tomato.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tomato.jpeg; path = images/tomato.jpeg; sourceTree = "<group>"; };
+		BB1018F01AC1330B0069883C /* pepper.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pepper.jpeg; path = images/pepper.jpeg; sourceTree = "<group>"; };
+		BB1018F41AC133150069883C /* vegetable oil.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "vegetable oil.jpeg"; path = "images/vegetable oil.jpeg"; sourceTree = "<group>"; };
+		BB1018F81AC1337F0069883C /* salt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = salt.jpeg; path = images/salt.jpeg; sourceTree = "<group>"; };
+		BB1018F91AC1337F0069883C /* sugar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sugar.jpeg; path = images/sugar.jpeg; sourceTree = "<group>"; };
+		BB1018FC1AC3D7090069883C /* wood-textures.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wood-textures.jpg"; path = "images/wood-textures.jpg"; sourceTree = "<group>"; };
+		BB1018FE1AC3E48C0069883C /* chickenpasta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chickenpasta.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +114,12 @@
 		BB1018AE1ABE36150069883C /* Recipeas */ = {
 			isa = PBXGroup;
 			children = (
+				BB1018E91ABFD9ED0069883C /* Images */,
+				BB1018D81ABE36DD0069883C /* Recipe Data */,
+				BB1018DB1ABE36F70069883C /* Models */,
+				BB1018DC1ABE37010069883C /* ViewControllers */,
 				BB1018B31ABE36150069883C /* AppDelegate.h */,
 				BB1018B41ABE36150069883C /* AppDelegate.m */,
-				BB1018B61ABE36150069883C /* MasterViewController.h */,
-				BB1018B71ABE36150069883C /* MasterViewController.m */,
-				BB1018B91ABE36150069883C /* DetailViewController.h */,
-				BB1018BA1ABE36150069883C /* DetailViewController.m */,
 				BB1018BC1ABE36150069883C /* Main.storyboard */,
 				BB1018BF1ABE36150069883C /* Images.xcassets */,
 				BB1018C11ABE36150069883C /* LaunchScreen.xib */,
@@ -122,6 +152,55 @@
 				BB1018CD1ABE36160069883C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB1018D81ABE36DD0069883C /* Recipe Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB1018D91ABE36F10069883C /* tomatoandegg.json */,
+				BB1018FE1AC3E48C0069883C /* chickenpasta.json */,
+			);
+			name = "Recipe Data";
+			sourceTree = "<group>";
+		};
+		BB1018DB1ABE36F70069883C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB1018DD1ABE37550069883C /* Recipe.h */,
+				BB1018DE1ABE37550069883C /* Recipe.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB1018DC1ABE37010069883C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB1018B61ABE36150069883C /* RecipeListViewController.h */,
+				BB1018B71ABE36150069883C /* RecipeListViewController.m */,
+				BB1018B91ABE36150069883C /* RecipeStartViewController.h */,
+				BB1018BA1ABE36150069883C /* RecipeStartViewController.m */,
+				BB1018E31ABE84A00069883C /* RecipeInstructionListViewController.h */,
+				BB1018E41ABE84A00069883C /* RecipeInstructionListViewController.m */,
+				BB1018E01ABE377E0069883C /* RecipeInstructionViewController.h */,
+				BB1018E11ABE377E0069883C /* RecipeInstructionViewController.m */,
+				BB1018E61ABFC98C0069883C /* RecipeInstructionView.h */,
+				BB1018E71ABFC98D0069883C /* RecipeInstructionView.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BB1018E91ABFD9ED0069883C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BB1018FC1AC3D7090069883C /* wood-textures.jpg */,
+				BB1018F81AC1337F0069883C /* salt.jpeg */,
+				BB1018F91AC1337F0069883C /* sugar.jpeg */,
+				BB1018F41AC133150069883C /* vegetable oil.jpeg */,
+				BB1018F01AC1330B0069883C /* pepper.jpeg */,
+				BB1018EC1AC12D6C0069883C /* egg.jpeg */,
+				BB1018ED1AC12D6C0069883C /* tomato.jpeg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +283,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1018EE1AC12D6C0069883C /* egg.jpeg in Resources */,
+				BB1018EF1AC12D6C0069883C /* tomato.jpeg in Resources */,
+				BB1018FB1AC1337F0069883C /* sugar.jpeg in Resources */,
 				BB1018BE1ABE36150069883C /* Main.storyboard in Resources */,
 				BB1018C31ABE36150069883C /* LaunchScreen.xib in Resources */,
+				BB1018FD1AC3D7090069883C /* wood-textures.jpg in Resources */,
 				BB1018C01ABE36150069883C /* Images.xcassets in Resources */,
+				BB1018FF1AC3E48C0069883C /* chickenpasta.json in Resources */,
+				BB1018F11AC1330B0069883C /* pepper.jpeg in Resources */,
+				BB1018DA1ABE36F10069883C /* tomatoandegg.json in Resources */,
+				BB1018F71AC133150069883C /* vegetable oil.jpeg in Resources */,
+				BB1018FA1AC1337F0069883C /* salt.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1018B51ABE36150069883C /* AppDelegate.m in Sources */,
-				BB1018B81ABE36150069883C /* MasterViewController.m in Sources */,
+				BB1018E81ABFC98D0069883C /* RecipeInstructionView.m in Sources */,
+				BB1018DF1ABE37550069883C /* Recipe.m in Sources */,
+				BB1018E51ABE84A00069883C /* RecipeInstructionListViewController.m in Sources */,
+				BB1018E21ABE377E0069883C /* RecipeInstructionViewController.m in Sources */,
+				BB1018B81ABE36150069883C /* RecipeListViewController.m in Sources */,
 				BB1018B21ABE36150069883C /* main.m in Sources */,
-				BB1018BB1ABE36150069883C /* DetailViewController.m in Sources */,
+				BB1018BB1ABE36150069883C /* RecipeStartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +512,7 @@
 				BB1018D41ABE36160069883C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1018D51ABE36160069883C /* Build configuration list for PBXNativeTarget "RecipeasTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +521,7 @@
 				BB1018D71ABE36160069883C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
